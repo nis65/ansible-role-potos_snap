@@ -6,3 +6,8 @@
       - firefox
       - chromium
       - cups
+
+- name: Enable firefox to print
+  ansible.builtin.command:
+    cmd: 'snap connect firefox:cups-control'
+  changed_when: true
