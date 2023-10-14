@@ -1,9 +1,7 @@
 
-# Ansible Role - potos\_template
+# Ansible Role - potos\_snap
 
-Role to use as template for new roles of Potos Linux Clients.
-
-[![Test](https://github.com/projectpotos/ansible-role-potos_template/actions/workflows/test.yml/badge.svg)](https://github.com/projectpotos/ansible-role-potos_template/actions/workflows/test.yml)
+Role to manage snap packages on ubuntu
 
 ## Example Playbook
 
@@ -19,7 +17,7 @@ playbook](./molecule/default/converge.yml) as a starting point:
   tasks:
     - name: run role
       ansible.builtin.include_role:
-        name: 'ansible-role-potos_template'
+        name: 'ansible-role-potos_snap'
 ```
 
 ## Role Variables
@@ -29,18 +27,14 @@ The default variables are defined in [defaults/main.yml](./defaults/main.yml):
 ```yaml
 ---
 
-# Example variable
-potos_template_example_var: 'hello world!'
-
-# List of items used for action xyz
-potos_template_example_list: []
+# None yet
 
 ```
 
 Another option is to use `ansible-doc` to read the argument specification:
 
 ```sh
-ansible-doc --type role -r . main ansible-role-potos_template
+ansible-doc --type role -r . main ansible-role-potos_snap
 ```
 
 ## Requirements

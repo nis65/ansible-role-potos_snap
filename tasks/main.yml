@@ -1,9 +1,8 @@
 ---
 
-- name: Example task to deploy a template
-  ansible.builtin.template:
-    src: 'potos.example.j2'
-    dest: '/potos.example'
-    owner: root
-    group: root
-    mode: '0755'
+- name: Install desired snap packages
+  community.general.snap:
+    name:
+      - firefox
+      - chromium
+      - cups
